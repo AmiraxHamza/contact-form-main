@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <form id="form" action="" method="get" novalidate>
+      <main>
+        <header class="main-header">Contact Us</header>
+
+        <div class="name-row">
+          <section class="input-fields">
+            <label for="first-name" class="required-asterisk">First Name</label>
+            <input type="text" id="first-name" />
+            <div class="requiredMsg" id="fNameRequiredMsg">
+              This field is required
+            </div>
+          </section>
+
+          <section class="input-fields">
+            <label for="last-name" class="required-asterisk">Last Name</label>
+            <input type="text" id="last-name" />
+            <div class="requiredMsg" id="lNameRequiredMsg">
+              This field is required
+            </div>
+          </section>
+        </div>
+
+        <section class="input-fields">
+          <label for="email-input" class="required-asterisk"
+            >Email Address</label
+          >
+          <input type="email" id="email-input" />
+          <div class="requiredMsg" id="emailRequiredMsg">
+            This field is required
+          </div>
+          <div class="invalid-email">Please enter a valid email address</div>
+        </section>
+
+        <section class="input-fields">
+          <p class="required-asterisk">Query Type</p>
+          <div class="query-row">
+            <label for="general-enquiry" class="query-type">
+              <input
+                type="radio"
+                id="general-enquiry"
+                name="query"
+                value="General-enquiry"
+              />
+              General Enquiry</label
+            >
+            <label for="support-request" class="query-type">
+              <input
+                type="radio"
+                id="support-request"
+                name="query"
+                value="Support-request"
+              />
+              Support Request</label
+            >
+          </div>
+          <div class="requiredMsg" id="queryRequiredMsg">
+            Please select a query type
+          </div>
+        </section>
+
+        <section class="input-fields">
+          <label for="message" class="required-asterisk">Message</label>
+          <textarea name="msg" id="message"></textarea>
+          <div class="requiredMsg" id="textFieldRequiredMsg">
+            This field is required
+          </div>
+        </section>
+
+        <section class="checkbox">
+          <div class="checkbox-row">
+            <input type="checkbox" name="consent" id="consent-checkbox" />
+            <label
+              for="consent-checkbox"
+              class="required-asterisk"
+              id="checkboxLabel"
+            >
+              I consent to being contacted by the team</label
+            >
+          </div>
+          <div class="requiredMsg" id="checkboxRequiredMsg">
+            To submit this form, please consent to being contacted
+          </div>
+        </section>
+
+        <section class="submit-button">
+          <input type="submit" value="Submit" />
+        </section>
+        <div class="successMsg" id="successMsg">
+          <p class="msgTop">
+            <img
+              src="assets/images/icon-success-check.svg"
+              alt="success-icon"
+            />
+            Message Sent!
+          </p>
+          <p class="msgBottom">
+            Thanks for completing the form. We'll be in touch soon!
+          </p>
+        </div>
+      </main>
+    </form>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Amira Hamza</a>.
+      </div>
+    </footer>
+  </body>
+</html>
